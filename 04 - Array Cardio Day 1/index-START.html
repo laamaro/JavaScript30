@@ -71,6 +71,12 @@
 
     console.table(sorted);
 
+    // OR:
+
+    const sortedTernary = inventors.sort((firstPerson, secondPerson) => firstPerson.year > secondPerson.year ? 1 : -1 );
+
+    console.table(sortedTernary);
+
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
 
